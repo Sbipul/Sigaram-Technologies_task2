@@ -1,0 +1,26 @@
+.main{
+    position: relative;
+    margin: 20px;
+    z-index: 1;
+    border: 1px solid rgb(112, 112, 112);
+
+}
+.sub{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    content: '';
+    visibility: hidden;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+    z-index: 10;
+    
+}
+.main:hover .sub{
+    visibility: visible;
+    opacity: 1;
+    top:50%;
+    z-index: 11;
+}
